@@ -7,4 +7,4 @@ gem "jekyll", "~> 3.0.3"
 #gem 'rouge', '~> 1.10', '>= 1.10.1'
 gem "github-pages", "~> 66"
 gem "rake", "~> 10.1.1"
-gem 'jekyll-seo-tag',  '~> 1.4.0'
+gem 'jekyll-seo-tag',  '~> 1.3.0'

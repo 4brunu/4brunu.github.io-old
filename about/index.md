@@ -7,8 +7,7 @@ logo: 'assets/images/ghost.png'
 current: about
 ---
 
-This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
 
-We use this for testing and for reference!
+This is a blog where I will share some of my experience with iOS and Android development.
 
-If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign up.
+You can follow my work on [Twitter](https://twitter.com/4brunu) or [Github](https://github.com/4brunu).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First blog post!
+title: First blog post
 date:   2014-09-27 14:00:00
 tags: content
 subclass: 'post tag-content'

@@ -1,10 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.0.3"
-#gem "rdiscount", "~> 2.1.7"
-#gem "pygments.rb", "~> 0.6.3"
-#gem 'kramdown', '~> 1.8'
-#gem 'rouge', '~> 1.10', '>= 1.10.1'
-gem "github-pages", "~> 66"
-gem "rake", "~> 10.1.1"
-gem 'jekyll-seo-tag',  '~> 1.3.0'
+# gem "jekyll", "3.3.1"
+gem "github-pages", "113"
+gem "rake", "12.0.0"
+gem "jekyll-seo-tag", "2.1.0"

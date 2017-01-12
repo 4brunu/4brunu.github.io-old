@@ -1,24 +1,24 @@
 module Jekyll
 
-  class AuthorsGenerator < Generator
-
+  class TagsGenerator < Generator
+  
     safe true
 
     def generate(site)
-      site.categories.each do |category|
-        build_subpages(site, "author", category)
+      site.tags.each do |tag|
+        build_subpages(site, "tag", tag)
       end
     end
 
-    def build_subpages(site, type, posts)
-      posts[1] = posts[1].sort_by { |p| -p.date.to_f }
+    def build_subpages(site, type, posts) 
+      posts[1] = posts[1].sort_by { |p| -p.date.to_f }     
       atomize(site, type, posts)
       paginate(site, type, posts)
     end
 
     def atomize(site, type, posts)
-      path = "/author/#{posts[0]}"
-      atom = AtomPageAuthor.new(site, site.source, path, type, posts[0], posts[1])
+      path = "/tag/#{posts[0]}"
+      atom = AtomPageTags.new(site, site.source, path, type, posts[0], posts[1])
       site.pages << atom
     end
 
@@ -26,19 +26,19 @@ module Jekyll
       pages = Jekyll::Paginate::Pager.calculate_pages(posts[1], site.config['paginate'].to_i)
       (1..pages).each do |num_page|
         pager = Jekyll::Paginate::Pager.new(site, num_page, posts[1], pages)
-        path = "/author/#{posts[0]}"
+        path = "/tag/#{posts[0]}"
         if num_page > 1
           path = path + "/page#{num_page}"
         end
-        newpage = GroupSubPageAuthor.new(site, site.source, path, type, posts[0])
+        newpage = GroupSubPageTags.new(site, site.source, path, type, posts[0])
         newpage.pager = pager
-        site.pages << newpage
+        site.pages << newpage 
 
       end
     end
   end
 
-  class GroupSubPageAuthor < Page
+  class GroupSubPageTags < Page
     def initialize(site, base, dir, type, val)
       @site = site
       @base = base
@@ -46,13 +46,13 @@ module Jekyll
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), "author-#{val}.html")
+      self.read_yaml(File.join(base, '_layouts'), "tag.html")
       self.data["grouptype"] = type
       self.data[type] = val
     end
   end
 
-  class AtomPageAuthor < Page
+  class AtomPageTags < Page
     def initialize(site, base, dir, type, val, posts)
       @site = site
       @base = base
@@ -60,7 +60,7 @@ module Jekyll
       @name = 'rss.xml'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), "author.xml")
+      self.read_yaml(File.join(base, '_layouts'), "tag.xml")
       self.data[type] = val
       self.data["grouptype"] = type
       self.data["posts"] = posts[0..9]

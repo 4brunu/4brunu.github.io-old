@@ -4,9 +4,14 @@
         <span class="hidden">Close</span>
     </a>
     <ul>
+      {% for nav in site.data.navigation %}
+      <li class="nav-{{ nav.name }} {% if page.current == nav.name or page.url contains nav.name %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}/{{ nav.url }}">{{ nav.name }}</a></li>
+      {% endfor %}
+        <!--
         <li class="nav-home {% if page.current == 'home' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}">Home</a></li>
         <li class="nav-about {% if page.current == 'about' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}about">About</a></li>
         <li class="nav-author {% if page.current == 'author' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}author/4brunu">Author</a></li>
+        -->
     </ul>
     <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
 </div>

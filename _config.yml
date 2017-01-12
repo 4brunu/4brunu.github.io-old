@@ -16,7 +16,7 @@ author: 'Bruno Coelho'
 nickname: 4brunu
 bio: 'iOS and Android Developer'
 location: 'Portugal'
-url: 'http://4brunu.github.io/'
+url: 'https://4brunu.github.io/'
 image: 'assets/images/4brunu.png'
 
 short_url: '4brunu.github.io/'
@@ -59,8 +59,8 @@ lsi: false
 username: 4brunu
 repo: 4brunu.github.io
 branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
+relative_source: ../
+destination: ../
 production_url:  https://4brunu.github.io/
 source_url:      https://github.com/4brunu/4brunu.github.io/
 

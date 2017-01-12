@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4brunu.github.io - Articles</title>
+    <description>iOS, Android and Code</description>
+    <link>
+    https://4brunu.github.io/</link>
+    
+      
+      <item>
+        <title>A Full and Comprehensive Style Test</title>
+        
+          <description>&lt;p&gt;it works!!!&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 27 Sep 2014 10:18:00 +0000</pubDate>
+        <link>
+        https://4brunu.github.io//a-full-and-comprehensive-style-test</link>
+        <guid isPermaLink="true">https://4brunu.github.io//a-full-and-comprehensive-style-test</guid>
+      </item>
+      
+    
+  </channel>
+</rss>

@@ -26,7 +26,8 @@ disqus: 4brunu-github-io
 baseurl: /
 
 # Permalinks
-permalink: /:categories/:year/:month/:day/:title.html
+# permalink: /:categories/:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title.html
 # permalink: /:title
 # permalink: /author/:username
 # permalink: /tag/:tag

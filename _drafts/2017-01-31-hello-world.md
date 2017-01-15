@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First blog post
+title: Hello World
 date:   2014-09-27 14:00:00
 tags: content
 subclass: 'post tag-content'
@@ -18,5 +18,7 @@ Last year was a great year for me, because I had the opportunity to try and lear
 I received lot's of help from the community, like [Fastlane](https://github.com/fastlane/fastlane), [Djinni](https://github.com/dropbox/djinni) and some slack group's like [ios.slack.com](ios.slack.com), [androidtalks.slack.com](androidtalks.slack.com), [mobilecpp.slack.com](mobilecpp.slack.com).
 
 This blog born of my desire to give back something good to the community, since I got a lot from it.
+
+The opinions expressed here are my own.
 
 See you soon on the next post!

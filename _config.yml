@@ -27,10 +27,11 @@ baseurl: /
 
 # Permalinks
 # permalink: date
-permalink: /:year/:month/:day/:title
+# permalink: /:year/:month/:day/:title
 # permalink: /:categories/:year/:month/:day/:title.html
 # permalink: /:year/:month/:day/:title.html
 # permalink: /:title
+permalink: blog/:title
 # permalink: /author/:username
 # permalink: /tag/:tag
 

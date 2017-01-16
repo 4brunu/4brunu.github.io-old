@@ -23,7 +23,8 @@ short_url: '4brunu.github.io/'
 google_analytics: UA-76819575-1
 disqus: 4brunu-github-io
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: '/'
+# baseurl: /
+baseurl:
 
 # Permalinks
 # permalink: date

@@ -1,5 +1,6 @@
 ---
 layout: post
+cover: 'assets/images/cover2.jpg'
 title: Hello World
 date:   2014-09-27 14:00:00
 tags: content

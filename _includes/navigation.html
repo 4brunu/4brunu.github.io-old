@@ -5,7 +5,9 @@
     </a>
     <ul>
       {% for nav in site.data.navigation %}
-      <li class="nav-{{ nav.name }} {% if page.current == nav.name or page.url contains nav.name %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a></li>
+      <li class="nav-{{ nav.name }} {% if page.current == nav.name or page.url contains nav.name %} nav-current{% endif %}" role="presentation">
+        <a href="{{ site.baseurl }}{{ nav.url }}">{{ site.baseurl }}-{{ nav.url }}-{{ nav.name }}</a>
+      </li>
       {% endfor %}
     </ul>
     <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>

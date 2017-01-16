@@ -23,10 +23,10 @@
             <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ post.url }}">&raquo;</a></p>
         </section>
         <footer class="post-meta">
-            {% if site.image %}<img class="author-thumb" src="{{ site.baseurl }}{{ site.image }}" alt="Author image" nopin="nopin" />{% endif %}
+            {% if site.image %}<img class="author-thumb" src="{{ site.baseurl }}/{{ site.image }}" alt="Author image" nopin="nopin" />{% endif %}
             <!-- author -->
             <!-- <a href='{{ site.baseurl }}author/{{ site.nickname }}'>{{ site.author }}</a> -->
-            <a href='{{ site.baseurl }}about'>{{ site.author }}</a>
+            <a href='{{ site.baseurl }}/about'>{{ site.author }}</a>
             <!-- [[tags prefix=" on "]] -->
             {% if post.tags.size > 0 %}
                 on

@@ -81,3 +81,4 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+  - LICENSE.txt

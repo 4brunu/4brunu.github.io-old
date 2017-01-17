@@ -12,14 +12,14 @@ cover: 'assets/images/cover1.jpg'
 logo: 'assets/images/logo.png'
 address: 'https://4brunu.github.io'
 
-# Author's info
-author: 'Bruno Coelho'
-# edit 'categories' in the front matter of every post to match this username
-nickname: 4brunu
-bio: 'iOS and Android Developer'
-location: 'Portugal'
-url: 'https://4brunu.github.io/'
-image: 'assets/images/4brunu.png'
+# # Author's info
+# author: 'Bruno Coelho'
+# # edit 'categories' in the front matter of every post to match this username
+# nickname: 4brunu
+# bio: 'iOS and Android Developer'
+# location: 'Portugal'
+# url: 'https://4brunu.github.io/'
+# image: 'assets/images/4brunu.png'
 
 short_url: '4brunu.github.io/'
 google_analytics: UA-76819575-1

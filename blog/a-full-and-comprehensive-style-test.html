@@ -16,19 +16,15 @@
 
     <!-- [[! Styles'n'Scripts ]] -->
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-<!--
     <link rel="stylesheet" type="text/css"
           href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
--->
     <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css" />
 
     <!-- [[! highlight.js ]] -->
-    <!--
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
     <style>.hljs { background: none; }</style>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    -->
 
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
         <link rel="canonical" href="/" />
@@ -48,6 +44,17 @@
     <meta name="twitter:url" content="/" />
     <meta name="twitter:image:src" content="/assets/images/blog_front_page.jpg" />
 
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "publisher": "Finding The Way Home",
+    "url": "/",
+    "image": "/assets/images/blog_front_page.jpg",
+    "description": "iOS, Android and Code"
+}
+    </script>
+
     <meta name="generator" content="Jekyll 3.0.0" />
     <link rel="alternate" type="application/rss+xml" title="4brunu.github.io" href="/feed.xml" />
 
@@ -62,16 +69,16 @@
     </a>
     <ul>
       
-      <li class="nav-Home " role="presentation"><a href="">Home</a></li>
+      <li class="nav-Home " role="presentation"><a href="/">Home</a></li>
       
-      <li class="nav-About " role="presentation"><a href="about">About</a></li>
+      <li class="nav-About " role="presentation"><a href="/about">About</a></li>
       
-      <li class="nav-iOS " role="presentation"><a href="tag/iOS">iOS</a></li>
+      <li class="nav-iOS " role="presentation"><a href="/tag/iOS">iOS</a></li>
       
-      <li class="nav-Android " role="presentation"><a href="tag/Android">Android</a></li>
+      <li class="nav-Android " role="presentation"><a href="/tag/Android">Android</a></li>
       
     </ul>
-    <a class="subscribe-button icon-feed" href="feed.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
 </div>
 <span class="nav-cover"></span>
 
@@ -82,18 +89,17 @@
         <!-- < default -->
 
 <!-- The comment above "< default" means - insert everything in this file into -->
-<!-- the [body] of the default.hbs template, which contains our header/footer. -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
 
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-	
-
-
-<header class="main-header post-head " style="background-image: url(/assets/images/cover3.jpg) ">
-    <nav class="main-nav  overlay  clearfix">
-        <a class="blog-logo" href="/"><img src="/assets/images/logo.png" alt="Blog Logo" /></a>
-        <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
+        
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        
     </nav>
 </header>
 
@@ -104,14 +110,14 @@
         <header class="post-header">
             <h1 class="post-title">A Full and Comprehensive Style Test</h1>
             <section class="post-meta">
-            <!-- <a href='/'></a> -->
+            <!-- <a href='/'>Bruno Coelho</a> -->
             <time class="post-date" datetime="2014-09-27">27 Sep 2014</time>
                 <!-- [[tags prefix=" on "]] -->
                 
                 on
                 
                     
-                       <a href='/tag/iOS'>iOS</a>
+                       <a href='/tag/iOS'>Ios</a>
                     
                 
                 
@@ -542,38 +548,44 @@ c.draw = function() {
             <!-- #author-->
 
             
+            <figure class="author-image">
+                <!-- <a class="img" href="/author/4brunu" style="background-image: url(/assets/images/4brunu.png)"><span class="hidden">'s Picture</span></a> -->
+                <a class="img" href="/about" style="background-image: url(/assets/images/4brunu.png)"><span class="hidden">'s Picture</span></a>
+            </figure>
+            
 
             <section class="author">
-								<h4><a href="/author/"></a></h4>
-								<!-- <h4><a href="/about"></a></h4> -->
+                <!-- <h4><a href="/author/4brunu">Bruno Coelho</a></h4> -->
+                <h4><a href="/about">Bruno Coelho</a></h4>
 
                 
+                    <p> iOS and Android Developer</p>
+                
                 <div class="author-meta">
-                    
-                    
+                    <span class="author-location icon-location"> Portugal</span>
+                    <span class="author-link icon-link"><a href="https://4brunu.github.io/"> 4brunu.github.io/</a></span>
                 </div>
             </section>
 
             <!-- /author  -->
 
-            <!-- Add Comments -->
-            
-                <div id="disqus_thread"></div>
-<script>
-	var disqus_config = function () {
-		this.page.url = 'https://4brunu.github.io/blog/2014/09/27/a-full-and-comprehensive-style-test'; // Replace PAGE_URL with your page's canonical URL variable
-		this.page.identifier = '/blog/2014/09/27/a-full-and-comprehensive-style-test'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=A Full and Comprehensive Style Test&amp;url=https://4brunu.github.io/bloga-full-and-comprehensive-style-test"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://4brunu.github.io/bloga-full-and-comprehensive-style-test"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://4brunu.github.io/bloga-full-and-comprehensive-style-test"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
 
-	(function() { // DON'T EDIT BELOW THIS LINE
-		var d = document, s = d.createElement('script');
-		s.src = '//4brunu-github-io.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-	})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
+            <!-- Add Disqus Comments -->
             
 
         </footer>
@@ -583,53 +595,13 @@ c.draw = function() {
 </main>
 
 <aside class="read-next">
-    
-    
-    	
-			
-		
 
     <!-- [[! next_post ]] -->
-    <a class="read-next-story " style="background-image: url(/assets/images/cover1.jpg)" href="/blog/2014/09/27/android-is-great">
-        <section class="post">
-            <h2>Android is great!</h2>
-            <p>Android is a great OS
-</p>
-        </section>
-    </a>
-
+    
     <!-- [[! /next_post ]] -->
-    
-    
-    	
-			
-				
-				
-					
-				
-					
-				
-			
-				
-				
-					
-						
-						
-			
-				
-					
-		
-
     <!-- [[! prev_post ]] -->
-    <a class="read-next-story prev " style="background-image: url(/assets/images/cover2.jpg)" href="/blog/2014/09/27/ios-and-android-are-good">
-        <section class="post">
-            <h2>iOS and Android are good</h2>
-            <p>iOS and Android are good body!
-</p>
-        </section>
-    </a>
-    <!-- [[! /prev_post ]] -->
     
+    <!-- [[! /prev_post ]] -->
 </aside>
 
 <!-- /post -->
@@ -637,11 +609,11 @@ c.draw = function() {
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">4brunu.github.io</a> &copy; 2017</section>
-          <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/Poi-Son/Pasper">Pasper</a></section>
+          <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/biomadeira/jasper">Jasper</a></section>
         </footer>
     </div>
     <!-- [[! Ghost outputs important scripts and data with this tag ]] -->
-    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- [[! The main JavaScript file for Casper ]] -->
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
@@ -657,6 +629,6 @@ c.draw = function() {
 	    ga('create', 'UA-76819575-1', 'auto');
 	    ga('send', 'pageview');
 
-     </script>
+     </script>   
 </body>
 </html>

@@ -1,9 +1,8 @@
 # Jykell configuration
-#markdown: redcarpet
-#highlighter: pygments
 markdown: kramdown
 highlighter: rouge
 paginate: 5
+paginate_path: page:num
 language: 'en-uk'
 
 # Website info
@@ -31,20 +30,12 @@ disqus: 4brunu-github-io
 baseurl:
 
 # Permalinks
-# permalink: date
-# permalink: blog/:year/:month/:day/:title
+permalink: blog/:year/:month/:day/:title
+# permalink: blog/:year/:month/:day/:title.html
 # permalink: /:year/:month/:day/:title
-# permalink: /:categories/:year/:month/:day/:title.html
 # permalink: /:year/:month/:day/:title.html
 # permalink: /:title
-permalink: blog/:title
-# permalink: /author/:username
-# permalink: /tag/:tag
-
-
-paginate: 5
-paginate_path: page:num
-
+# permalink: blog/:title
 
 # gems and other configs
 gems: [jekyll-paginate, jekyll-seo-tag]

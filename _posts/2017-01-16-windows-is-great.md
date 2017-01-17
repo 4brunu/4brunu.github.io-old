@@ -7,7 +7,6 @@ tags: iOS
 subclass: 'post tag-iOS'
 categories: '4brunu'
 navigation: True
-logo: 'assets/images/ghost.png'
 ---
 
 Windows is a great OS

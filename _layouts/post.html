@@ -87,12 +87,8 @@ class: 'post-template'
             <!-- /author  -->
 
             <!-- Add Comments -->
-            {% if site.comments_duoshuo %}
-                {% include comments_duoshuo.html %}
-            {% endif %}
-
-            {% if site.comments_disqus %}
-                {% include comments_disqus.html %}
+            {% if site.disqus %}
+                {% include disqus.html %}
             {% endif %}
 
         </footer>

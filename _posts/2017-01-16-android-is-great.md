@@ -7,7 +7,6 @@ tags: Android
 subclass: 'post tag-Android'
 categories: '4brunu'
 navigation: True
-logo: 'assets/images/ghost.png'
 ---
 
 Android is a great OS

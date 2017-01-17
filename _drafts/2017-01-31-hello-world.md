@@ -7,7 +7,6 @@ tags: content
 subclass: 'post tag-content'
 categories: '4brunu'
 navigation: True
-logo: 'assets/images/ghost.png'
 ---
 
 Hi, this is my first blog post!

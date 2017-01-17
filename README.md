@@ -1,7 +1,7 @@
 ## Jasper
 
 [![Build Status](https://travis-ci.org/4brunu/4brunu.github.io.svg?branch=master)](https://travis-ci.org/4brunu/4brunu.github.io)
-[![Ruby](https://img.shields.io/badge/ruby-2.1.9-blue.svg?style=flat)](http://travis-ci.org/4brunu/4brunu.github.io)
+[![Ruby](https://img.shields.io/badge/ruby-2.4.0-blue.svg?style=flat)](http://travis-ci.org/4brunu/4brunu.github.io)
 [![Jekyll](https://img.shields.io/badge/jekyll-3.3.1-blue.svg?style=flat)](https://rubygems.org/gems/jekyll)
 
 This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper).

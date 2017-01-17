@@ -9,6 +9,9 @@ language: 'en-uk'
 # Website info
 name: '4brunu.github.io'
 description: "iOS, Android and Code"
+cover: 'assets/images/cover1.jpg'
+logo: 'assets/images/logo.png'
+address: 'https://4brunu.github.io'
 
 # Author's info
 author: 'Bruno Coelho'
@@ -29,14 +32,18 @@ baseurl:
 
 # Permalinks
 # permalink: date
-permalink: blog/:year/:month/:day/:title
+# permalink: blog/:year/:month/:day/:title
 # permalink: /:year/:month/:day/:title
 # permalink: /:categories/:year/:month/:day/:title.html
 # permalink: /:year/:month/:day/:title.html
 # permalink: /:title
-# permalink: blog/:title
+permalink: blog/:title
 # permalink: /author/:username
 # permalink: /tag/:tag
+
+
+paginate: 5
+paginate_path: page:num
 
 
 # gems and other configs

@@ -1,20 +1,17 @@
 module Jekyll
 
   class AuthorsGenerator < Generator
-
+  
     safe true
 
     def generate(site)
       site.categories.each do |category|
-        # Only generate page if category is an author
-        if site.data["authors"][category[0]]
-          build_subpages(site, "author", category)
-        end
+        build_subpages(site, "author", category)
       end
     end
 
-    def build_subpages(site, type, posts)
-      posts[1] = posts[1].sort_by { |p| -p.date.to_f }
+    def build_subpages(site, type, posts) 
+      posts[1] = posts[1].sort_by { |p| -p.date.to_f }     
       atomize(site, type, posts)
       paginate(site, type, posts)
     end
@@ -31,11 +28,11 @@ module Jekyll
         pager = Jekyll::Paginate::Pager.new(site, num_page, posts[1], pages)
         path = "/author/#{posts[0]}"
         if num_page > 1
-          path = path + "/#{num_page}"
+          path = path + "/page#{num_page}"
         end
         newpage = GroupSubPageAuthor.new(site, site.source, path, type, posts[0])
         newpage.pager = pager
-        site.pages << newpage
+        site.pages << newpage 
 
       end
     end
@@ -54,7 +51,7 @@ module Jekyll
       self.data[type] = val
     end
   end
-
+  
   class AtomPageAuthor < Page
     def initialize(site, base, dir, type, val, posts)
       @site = site

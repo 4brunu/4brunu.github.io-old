@@ -5,18 +5,54 @@
    
       <title>4brunu.github.io/</title>
    
-   <link>https://4brunu.github.io/</link>
+   <link></link>
    <description>iOS, Android and Code</description>
    <language>en-uk</language>
-   <managingEditor> Bruno Coelho</managingEditor>
+   <managingEditor> </managingEditor>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>iOS is great</title>
+	  <link>/blog/2014/09/27/windows-is-great</link>
+	  <author></author>
+	  <pubDate>2014-09-27T14:00:00+00:00</pubDate>
+	  <guid>/blog/2014/09/27/windows-is-great</guid>
+	  <description><![CDATA[
+	     <p>Windows is a great OS</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>iOS is great</title>
+	  <link>/blog/2014/09/27/macos-is-great</link>
+	  <author></author>
+	  <pubDate>2014-09-27T14:00:00+00:00</pubDate>
+	  <guid>/blog/2014/09/27/macos-is-great</guid>
+	  <description><![CDATA[
+	     <p>macOS is a great OS</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>iOS is great</title>
+	  <link>/blog/2014/09/27/ios-is-great</link>
+	  <author></author>
+	  <pubDate>2014-09-27T14:00:00+00:00</pubDate>
+	  <guid>/blog/2014/09/27/ios-is-great</guid>
+	  <description><![CDATA[
+	     <p>iOS is a great OS</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>A Full and Comprehensive Style Test</title>
-	  <link>//blog/a-full-and-comprehensive-style-test</link>
-	  <author>Bruno Coelho</author>
+	  <link>/blog/2014/09/27/a-full-and-comprehensive-style-test</link>
+	  <author></author>
 	  <pubDate>2014-09-27T10:18:00+00:00</pubDate>
-	  <guid>//blog/a-full-and-comprehensive-style-test</guid>
+	  <guid>/blog/2014/09/27/a-full-and-comprehensive-style-test</guid>
 	  <description><![CDATA[
 	     <p>it works!!! New commit...</p>
 
@@ -430,6 +466,18 @@ c.draw = function() {
 <p></div><script async src="//codepen.io/assets/embed/ei.js"></script></p>
 
 <p>Isn't it beautiful?</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>iOS and Android are good</title>
+	  <link>/blog/2014/09/27/ios-and-android-are-good</link>
+	  <author></author>
+	  <pubDate>2014-09-27T00:00:00+00:00</pubDate>
+	  <guid>/blog/2014/09/27/ios-and-android-are-good</guid>
+	  <description><![CDATA[
+	     <p>iOS and Android are good body!</p>
 
 	  ]]></description>
 	</item>

@@ -1,10 +1,7 @@
 ---
 layout: page
-cover: 'assets/images/cover3.jpg'
 title: About
-class: 'post'
-navigation: True
-logo: 'assets/images/ghost.png'
+cover: 'assets/images/cover4.jpg'
 current: about
 ---
 

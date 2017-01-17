@@ -68,12 +68,14 @@ class: 'post-template'
 
             {% if site.image %}
             <figure class="author-image">
-                <a class="img" href="{{ site.baseurl }}/about" style="background-image: url({{ site.baseurl }}/{{ site.image }})"><span class="hidden">{{ site.nickname }}'s Picture</span></a>
+                <a class="img" href="{{ site.baseurl }}/author/{{ site.nickname }}" style="background-image: url({{ site.baseurl }}/{{ site.image }})"><span class="hidden">{{ site.nickname }}'s Picture</span></a>
+								<!-- <a class="img" href="{{ site.baseurl }}/about" style="background-image: url({{ site.baseurl }}/{{ site.image }})"><span class="hidden">{{ site.nickname }}'s Picture</span></a> -->
             </figure>
             {% endif %}
 
             <section class="author">
-                <h4><a href="{{ site.baseurl }}/about">{{ site.nickname }}</a></h4>
+								<h4><a href="{{ site.baseurl }}/author/{{ site.nickname }}">{{ site.nickname }}</a></h4>
+								<!-- <h4><a href="{{ site.baseurl }}/about">{{ site.nickname }}</a></h4> -->
 
                 {% if site.bio %}
                     <p> {{ site.bio }}</p>

@@ -6,7 +6,10 @@ module Jekyll
 
     def generate(site)
       site.categories.each do |category|
-        build_subpages(site, "author", category)
+        # Only generate page if category is an author
+        if site.data["authors"][category[0]]
+          build_subpages(site, "author", category)
+        end
       end
     end
 
@@ -28,7 +31,7 @@ module Jekyll
         pager = Jekyll::Paginate::Pager.new(site, num_page, posts[1], pages)
         path = "/author/#{posts[0]}"
         if num_page > 1
-          path = path + "/page#{num_page}"
+          path = path + "/#{num_page}"
         end
         newpage = GroupSubPageAuthor.new(site, site.source, path, type, posts[0])
         newpage.pager = pager
@@ -46,7 +49,7 @@ module Jekyll
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), "author-#{val}.html")
+      self.read_yaml(File.join(base, '_layouts'), "author.html")
       self.data["grouptype"] = type
       self.data[type] = val
     end
